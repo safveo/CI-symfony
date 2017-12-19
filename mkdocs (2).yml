@@ -1,0 +1,63 @@
+docs_dir: doc/book
+site_dir: doc/html
+pages:
+    - index.md
+    - 'Getting Started':
+        - 'Overview and Features': getting-started/features.md
+        - 'Quick Start: Standalone': getting-started/standalone.md
+        - 'Quick Start: Skeleton Installer': getting-started/skeleton.md
+    - Features:
+        - Applications: features/application.md
+        - Containers:
+            - Introduction: features/container/intro.md
+            - 'Container Factories': features/container/factories.md
+            - 'Using zend-servicemanager': features/container/zend-servicemanager.md
+            - 'Using Pimple': features/container/pimple.md
+            - 'Using Aura.Di': features/container/aura-di.md
+        - 'Routing Adapters':
+            - Introduction: features/router/intro.md
+            - 'Routing Interface': features/router/interface.md
+            - 'URI Generation': features/router/uri-generation.md
+            - 'Route Result Observers': features/router/result-observers.md
+            - 'Routing vs Piping': features/router/piping.md
+            - 'Using Aura': features/router/aura.md
+            - 'Using FastRoute': features/router/fast-route.md
+            - 'Using the ZF2 Router': features/router/zf2.md
+        - Templating:
+            - Introduction: features/template/intro.md
+            - 'Template Renderer Interface': features/template/interface.md
+            - 'Templated Middleware': features/template/middleware.md
+            - 'Using Plates': features/template/plates.md
+            - 'Using Twig': features/template/twig.md
+            - 'Using zend-view': features/template/zend-view.md
+        - 'Error Handling': features/error-handling.md
+        - Helpers:
+            - Introduction: features/helpers/intro.md
+            - UrlHelper: features/helpers/url-helper.md
+            - ServerUrlHelper: features/helpers/server-url-helper.md
+            - 'Body Parsing Middleware': features/helpers/body-parse.md
+        - Emitters: features/emitters.md
+    - Cookbook:
+        - 'Prepending a common path to all routes': cookbook/common-prefix-for-routes.md
+        - 'Route-specific middleware pipelines': cookbook/route-specific-pipeline.md
+        - 'Setting custom 404 page handling': cookbook/custom-404-page-handling.md
+        - 'Registering custom view helpers when using zend-view': cookbook/using-custom-view-helpers.md
+        - 'Using zend-form view helpers': cookbook/using-zend-form-view-helpers.md
+        - 'Using Expressive from a subdirectory': cookbook/using-a-base-path.md
+        - 'Building modular applications': cookbook/modular-layout.md
+        - 'Setting a locale based on a routing parameter': cookbook/setting-locale-depending-routing-parameter.md
+        - 'Setting a locale without a routing parameter': cookbook/setting-locale-without-routing-parameter.md
+        - 'Enabling debug toolbars': cookbook/debug-toolbars.md
+        - 'Handling multiple routes in a single class': cookbook/using-routed-middleware-class-as-controller.md
+        - 'Flash Messengers': cookbook/flash-messengers.md
+    - Reference:
+        - Examples: reference/usage-examples.md
+        - 'Expressive Projects': reference/expressive-projects.md
+        - Migration:
+            - 'From RC5 and Earlier': reference/migration/rc-to-v1.md
+site_name: Expressive
+site_description: 'zend-expressive: PSR-7 Middleware Microframework'
+repo_url: 'https://github.com/zendframework/zend-expressive'
+copyright: 'Copyright (c) 2016 <a href="http://www.zend.com/">Zend Technologies USA Inc.</a>'
+extra_css:
+    - css/zend-expressive.css
