@@ -87,7 +87,7 @@
     </target>
 
     <target name="pdepend" description="Calculate software metrics using PHP_Depend">
-        <exec executable="pdepend">
+        <exec executable="/root/.composer/vendor/bin/pdepend">
             <arg value="--jdepend-xml=${build-dir}/logs/jdepend.xml" />
             <arg value="--jdepend-chart=${build-dir}/pdepend/dependencies.svg" />
             <arg value="--overview-pyramid=${build-dir}/pdepend/overview-pyramid.svg" />
